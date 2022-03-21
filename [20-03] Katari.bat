@@ -32,7 +32,7 @@ echo.
 echo Nota:La red se debe haber usado al menos una vez en este dispositivo
 set /p red=Nombre de la Red: 
 netsh wlan show profile name="%red%" key=clear>apuntes.txt
-echo  [*] Clave guardada.
+echo  [*] Clave guardada. Revisa el archivo apuntes en el escritorio.
 pause>nul
 cls
 goto inicio
@@ -56,7 +56,7 @@ echo.
 echo.
 echo        ===============================
 echo        =      CAMBIOS REALIZADOS     =
-echo        = Notas de guía en comandos   =
+echo        = Notas de guia en comandos   =
 echo        = Agregado apartado de info   =
 echo        ===============================
 pause>nul
