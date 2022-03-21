@@ -6,8 +6,8 @@ mode 75,30
 :inicio
 echo.
 echo   __  __     ______     ______   ______     ______     __    
-echo  /\ \/ /    /\  __ \   /\__  _\ /\  __ \   /\  == \   /\ \   
-echo  \ \  _"-.  \ \ \__\\  \/_/\ \/ \ \ \__\\  \ \  __<   \ \ \  
+echo  /\ \/ /    /\  __ \   /\__  _\ /\  __ \   /\  == \   /\ \  
+echo  \ \  _"-.  \ \ \__\\  \/_/\ \/ \ \ \__\\  \ \  __<   \ \ \ 
 echo   \ \_\ \_\  \ \_\ \_\    \ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\ 
 echo    \/_/\/_/   \/_/\/_/     \/_/   \/_/\/_/   \/_/ /_/   \/_/ 
 echo                                                    -by Saguma
@@ -18,7 +18,7 @@ echo        ********************************************
 echo              [1] Crackear red wifi
 echo              [2] Crackear clave de pc
 echo              [3] Info sobre el script
-echo              [5] Salir                         
+echo              [4] Salir                         
 echo.
 echo.
 set /p menu=Opcion: 
