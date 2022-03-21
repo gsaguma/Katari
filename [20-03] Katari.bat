@@ -54,9 +54,11 @@ echo        +  Discord:   saguma#7066     +
 echo        +++++++++++++++++++++++++++++++
 echo.
 echo.
-echo         |     CAMBIOS REALIZADOS     |
-echo         |-> Notas de guía en comandos|
-echo         |-> Agregado apartado de info|
+echo        ===============================
+echo        =      CAMBIOS REALIZADOS     =
+echo        = Notas de guía en comandos   =
+echo        = Agregado apartado de info   =
+echo        ===============================
 pause>nul
 cls
 goto inicio
