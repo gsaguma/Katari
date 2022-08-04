@@ -13,19 +13,21 @@ echo    \/_/\/_/   \/_/\/_/     \/_/   \/_/\/_/   \/_/ /_/   \/_/
 echo                                                    -by Saguma
 echo.
 echo        ********************************************
-echo        *               Bienvenido(a)               *
+echo        *               Bienvenido/a               *
 echo        ********************************************
 echo              [1] Recuperar clave wifi
 echo              [2] Recuperar clave de windows
-echo              [3] Info
-echo              [4] Salir                         
+echo              [3] Descongestionar wifi
+echo              [4] Info
+echo              [5] Salir                         
 echo.
 echo.
 set /p menu=Opcion: 
 if "%menu%"=="1" goto op1
 if "%menu%"=="2" goto op2
 if "%menu%"=="3" goto op3
-if "%menu%"=="4" goto salir
+if "%menu%"=="4" goto op4
+if "%menu%"=="5" goto salir
 
 :op1
 cls
@@ -54,7 +56,18 @@ goto Inicio
 
 :op3
 cls
-color e
+ipconfig/release>nul
+echo Descongestionando wifi...
+ipconfig/renew>nul
+echo.
+echo Wifi descongestionado
+pause>nul
+cls
+goto Inicio
+
+
+:op4
+cls
 echo.
 echo   __  __     ______     ______   ______     ______     __    
 echo  /\ \/ /    /\  __ \   /\__  _\ /\  __ \   /\  == \   /\ \  
@@ -62,7 +75,7 @@ echo  \ \  _"-.  \ \ \__\\  \/_/\ \/ \ \ \__\\  \ \  __<   \ \ \
 echo   \ \_\ \_\  \ \_\ \_\    \ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\ 
 echo    \/_/\/_/   \/_/\/_/     \/_/   \/_/\/_/   \/_/ /_/   \/_/ 
 echo                                                    -by Saguma
-ping localhost -n 2 >nul
+ping localhost -n 3 >nul
 echo.
 echo.
 echo                 +++++++++++++++++++++++++++++++
